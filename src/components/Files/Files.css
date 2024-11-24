@@ -1,0 +1,225 @@
+/* Global Styles */
+body {
+    font-family: 'Press Start 2P', cursive, sans-serif; /* Retro-futuristic font */
+    background-color: #2d2d2d; /* Dark background for contrast */
+    color: #e1e1e1; /* Light text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* File Upload and List Container */
+.file-upload-and-list {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #353535; /* Dark grey background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+h2 {
+    color: #ffcb00; /* Yellow, reminiscent of Fallout's color palette */
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ffcb00;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* File Upload Form */
+.file-upload-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.file-upload-form input[type="file"] {
+    background-color: #444;
+    color: #e1e1e1;
+    border: 1px solid #666;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.file-upload-form button {
+    background-color: #ffcb00;
+    color: #2d2d2d;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.file-upload-form button:hover {
+    background-color: #e1e1e1;
+    color: #2d2d2d;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid #444;
+}
+
+table th {
+    background-color: #444;
+    color: #ffcb00;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+table td {
+    color: #e1e1e1;
+    font-size: 0.95rem;
+}
+
+table td a {
+    color: #ffcb00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Cell Content (for buttons) */
+.cell-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cell-content button {
+    background: none;
+    border: none;
+    color: #ffcb00;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.cell-content button:hover {
+    color: #e1e1e1;
+}
+
+/* Info Message (Copy Link Notification) */
+.info-message {
+    position: absolute;
+    padding: 10px;
+    background-color: #333;
+    color: #ffcb00;
+    border: 1px solid #ffcb00;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.info-message.show {
+    opacity: 1;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #353535;
+    color: #e1e1e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    z-index: 1000;
+}
+
+.modal h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: #ffcb00;
+}
+
+.modal input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    background-color: #444;
+    color: #e1e1e1;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modalActions button {
+    padding: 8px 16px;
+    background-color: #ffcb00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.modalActions button:hover {
+    background-color: #e1e1e1;
+    color: #2d2d2d;
+}
+
+/* Dark Overlay for Modals */
+.modal:before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+/* Buttons for Delete */
+button {
+    background-color: #e60000;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Dark Theme Buttons */
+button:active {
+    transform: scale(0.98);
+}

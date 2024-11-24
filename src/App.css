@@ -1,136 +1,185 @@
-/* Основной стиль для главной страницы */
-.homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f9;
-  font-family: 'Arial', sans-serif;
-  transition: background-color 0.5s ease-in-out;
+/* General Styles for Fallout-inspired Theme */
+
+/* Use a dark background with hints of grunge */
+body {
+  background-color: #2b2b2b; /* Dark gray background */
+  color: #e4e4e4; /* Light gray text */
+  font-family: 'Courier New', Courier, monospace; /* Retro typewriter font */
+  margin: 0;
+  padding: 0;
 }
 
-/* Заголовок h1 */
-h1 {
-  font-size: 3rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
+/* Center all elements with a bit of a rugged look */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #3e3e3e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Описание в параграфе */
-p {
-  font-size: 1.5rem;
-  color: #666;
-  text-align: center;
-  margin-bottom: 30px;
-  opacity: 0;
-  animation: fadeIn 1s 0.5s forwards;
+/* Use a muted color palette */
+h1, h2, h3 {
+  color: #c1a34b; /* Fallout yellow/greenish hue */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* Кнопки */
-.buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
-}
-
-.button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Форма для ввода */
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: #f4f4f9;
-  font-family: 'Arial', sans-serif;
-  transition: background-color 0.5s ease-in-out;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 300px;
-  opacity: 0;
-  animation: fadeIn 1s 0.5s forwards;
-}
-
-/* Поля ввода */
-input {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  transition: border-color 0.3s ease;
-}
-
-input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-/* Кнопка отправки формы */
+/* Buttons with a weathered look */
 button {
-  padding: 10px;
-  font-size: 1rem;
-  background-color: #007bff;
-  color: white;
+  background-color: #5c5c5c; /* Muted metal look */
   border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
-  transform: translateY(-3px);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #9e8d4e; /* Faded yellow/brown */
 }
 
-/* Ошибка */
-.error {
-  color: red;
-  font-size: 0.8rem;
+button:active {
+  background-color: #706144; /* Slightly darker brownish tone */
 }
 
-/* Анимации */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+button:disabled {
+  background-color: #b0b0b0;
+  cursor: not-allowed;
 }
 
-/* Эффект на страницу при наведении */
-.homepage:hover {
-  background-color: #e0e0e0;
+/* Input fields styled like worn-out consoles */
+input[type="text"],
+input[type="file"] {
+  background-color: #4c4c4c;
+  border: 1px solid #6a6a6a;
+  color: #e4e4e4;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: #c1a34b; /* Fallout yellow border when focused */
+  outline: none;
+}
+
+/* Table styling for the file list */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #5c5c5c; /* Muted border */
+}
+
+table th {
+  background-color: #444;
+  color: #e4e4e4;
+  font-weight: bold;
+}
+
+table td {
+  background-color: #3e3e3e;
+}
+
+table tr:hover {
+  background-color: #555;
+}
+
+/* Worn-out button icons */
+button svg {
+  width: 20px;
+  height: 20px;
+  fill: #e4e4e4;
+}
+
+button:hover svg {
+  fill: #c1a34b;
+}
+
+/* Modal styles - rugged look with distressed borders */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  border: 2px solid #5c5c5c;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.modal h2 {
+  color: #c1a34b;
+  font-size: 24px;
+}
+
+.modal p {
+  color: #e4e4e4;
+}
+
+.modal input[type="text"] {
+  background-color: #4c4c4c;
+  color: #e4e4e4;
+  padding: 10px;
+  border: 1px solid #6a6a6a;
+  width: 100%;
+}
+
+.modalActions button {
+  background-color: #5c5c5c;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalActions button:hover {
+  background-color: #9e8d4e;
+}
+
+.modalActions button:disabled {
+  background-color: #b0b0b0;
+}
+
+/* Custom Notification for Copy Link */
+.info-message {
+  position: absolute;
+  background-color: #5c5c5c;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.info-message.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.info-message:after {
+  content: '!';
+  margin-left: 10px;
+  font-weight: bold;
 }

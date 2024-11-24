@@ -1,0 +1,66 @@
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2a2a2a; /* Dark Vault-Tec terminal background */
+    border: 3px solid #0c9d00; /* Pip-Boy green outline */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 0 15px rgba(12, 157, 0, 0.7);
+    font-family: "Courier New", Courier, monospace; /* Retro terminal font */
+    color: #0c9d00; /* Pip-Boy green */
+}
+
+.signup-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0c9d00;
+    border-radius: 5px;
+    background: #1c1c1c; /* Darker terminal background */
+    color: #0c9d00;
+    font-size: 14px;
+}
+
+.signup-container input::placeholder {
+    color: rgba(12, 157, 0, 0.8); /* Slightly faded Pip-Boy green */
+    font-style: italic;
+}
+
+.signup-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #005f00, #0c9d00); /* Pip-Boy green gradient */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(12, 157, 0, 0.5);
+}
+
+.signup-container button:hover {
+    background: #0c9d00;
+    box-shadow: 0 0 20px rgba(12, 157, 0, 0.9);
+    transform: translateY(-2px);
+}
+
+.error-message {
+    margin-top: 15px;
+    color: #ff6b6b; /* Error red */
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(255, 107, 107, 0.1);
+    padding: 10px;
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    border-radius: 5px;
+    width: 100%;
+}
