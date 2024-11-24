@@ -57,7 +57,7 @@
 
 .auth-form .error {
     margin-top: 10px;
-    color: #ff4d4d; /* Fallout-style error red */
+    color: #ff4d4d; /* -style error red */
     font-size: 0.9rem;
     text-align: center;
 }
@@ -73,7 +73,7 @@
     left: -10px;
     right: -10px;
     bottom: -10px;
-    border: 3px dashed #00ff00; /* Fallout green, gives retro vibes */
+    border: 3px dashed #00ff00; /*  green, gives retro vibes */
     pointer-events: none;
     animation: flicker 2s infinite;
 }

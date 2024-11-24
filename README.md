@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a React-based frontend application for **My Cloud**, a cloud storage service. It is built with Vite as the development and build tool. The application uses Redux for state management, Axios for making API requests, and React Router for navigation. It provides a user interface to interact with the cloud storage system, allowing users to upload, manage, and view their files.
+This project is a React-based frontend application for [MyCloud](https://github.com/Roman9456/MyCloud_server), a cloud storage service. It is built with Vite as the development and build tool. The application uses Redux for state management, Axios for making API requests, and React Router for navigation. It provides a user interface to interact with the cloud storage system, allowing users to upload, manage, and view their files.
 
 ## Dependencies
 
