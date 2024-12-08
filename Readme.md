@@ -67,7 +67,7 @@ The project is currently configured for **local deployment**. However, the READM
 ### Примеры скриншотов
 
 Ниже приведены скриншоты, которые помогут вам понять основные функции приложения:
-- **Регистрация**: ![Регистрация](pics/reg.png)
+- **Регистрация**: ![Registration](pics/reg.png)
 - **Авторизация**: ![Авторизация](pics/login.png) 
 - **Главная Страница**: ![Main Page](pics/main.png)
 - **Загрузка файлов**: ![Загрузка файлов](pics/uploading.png)
