@@ -1,0 +1,121 @@
+/* File upload form container */
+.file-upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #121212; /* dark background */
+  color: #e0e0e0; /* light text color */
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+}
+
+.file-upload-form h2 {
+  font-size: 24px;
+  color: #e0e0e0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+input[type="file"] {
+  background-color: #333;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="file"]:focus {
+  border-color: #1db954; /* accent color on focus */
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #1db954;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 20px;
+}
+
+button[type="submit"]:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover {
+  background-color: #1ed760;
+  transform: scale(1.05); /* subtle scaling effect */
+}
+
+/* Loading spinner */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #1db954;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+  margin-top: 20px;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Upload success and error messages */
+.upload-success, .upload-error {
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.upload-success {
+  background-color: #2e7d32;
+  color: #fff;
+  border: 1px solid #1db954;
+}
+
+.upload-error {
+  background-color: #d32f2f;
+  color: #fff;
+  border: 1px solid #ff3333;
+}
+
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+  .file-upload-form {
+    padding: 20px;
+  }
+
+  .file-upload-form h2 {
+    font-size: 20px;
+  }
+
+  input[type="file"],
+  button[type="submit"] {
+    width: 100%;
+  }
+}

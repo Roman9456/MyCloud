@@ -1,0 +1,176 @@
+/* General style for the entire panel */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212; /* Dark background for the entire page */
+  color: #d3d3d3; /* Light text color */
+  font-family: 'Courier New', Courier, monospace; /* Fallout-style font */
+  position: relative;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between; /* Logo on the left, others on the right */
+  align-items: center; /* Centered vertically */
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #3b3b3b, #1a1a1a); /* Dark gradient background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #444; /* Thin border at the bottom */
+  width: 98%; /* Full-screen width */
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header is always above content */
+}
+
+/* Logo */
+.logo {
+  height: 50px;
+  filter: grayscale(100%); /* Black-and-white effect */
+}
+
+/* Action panel on the right */
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.search {
+  padding: 8px 12px;
+  margin-right: 12px;
+  border-radius: 5px;
+  background-color: #333;
+  border: 1px solid #666;
+  color: #ddd;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.search:focus {
+  background-color: #555;
+  border-color: #999;
+  outline: none;
+}
+
+.sort, .add {
+  background-color: transparent;
+  border: 2px solid #444;
+  padding: 10px;
+  color: white;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.sort:hover, .add:hover {
+  color: #ffd700; /* Yellow color to highlight buttons */
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.userIcon {
+  position: relative;
+  cursor: pointer;
+}
+
+.userIcon img {
+  height: 50px;  /* Increased icon size */
+  border-radius: 50%;
+  border: 2px solid #ddd; /* Thin border around the image */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.userIcon img:hover {
+  transform: rotate(360deg); /* Rotation effect on hover */
+  filter: brightness(1.2);
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: #222;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  width: 150px;
+}
+
+.dropdown button {
+  background-color: transparent;
+  border: none;
+  color: #ccc;
+  width: 100%;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown button:hover {
+  background-color: #444; /* Dark background on hover */
+  color: #ffd700; /* Yellow color */
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+  z-index: 1001; /* Make sure the modal is on top */
+  color: #d3d3d3;
+  width: 300px;
+}
+
+.modal input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.modal input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.modal button {
+  width: 100%;
+  background-color: #444; /* Dark background for buttons */
+  border: 2px solid #888;
+  padding: 10px;
+  color: #fff;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #ffd700; /* Yellow color when hovering */
+  border-color: #ffd700;
+}
+
+.modal button:disabled {
+  background-color: #333; /* Darker background when disabled */
+  border-color: #555;
+  cursor: not-allowed; /* Show not-allowed cursor */
+}
