@@ -8,10 +8,7 @@ Welcome to the **MyCloud** project repository! This is a graduation project buil
 
 - **`backend/`**: Contains the Django backend for handling user authentication, file management, and more.
 - **`frontend/`**: Contains the React app bundled with Vite, which is used for the user interface.
-- **`pics/`**: Contains example images for various functionalities:
-  - `reg.png`: Registration page
-  - `login.png`: Login page
-  - `uploading.png`: File upload page
+
 
 ### Frontend Setup
 
@@ -48,9 +45,7 @@ The project is currently configured for **local deployment**. However, the READM
 - **`backend/`**: Содержит бэкенд на Django для обработки аутентификации пользователей, управления файлами и других функций.
 - **`frontend/`**: Содержит приложение на React, собранное с помощью Vite, для пользовательского интерфейса.
 - **`pics/`**: Содержит примеры изображений для различных функций:
-  - `reg.png`: Страница регистрации
-  - `login.png`: Страница авторизации
-  - `uploading.png`: Страница загрузки файлов
+
 
 ### Настройка фронтенда
 
