@@ -28,7 +28,7 @@ The backend is developed using **Django**. You can find the setup instructions f
 ### Example Screenshots
 
 Below are some screenshots to guide you through the main functionalities of the app: 
-- **Registration**: ![Registration](pics/reg.png)
+- **Registration**: ![Registration](pics/Reg.png)
 - **Login**: ![Login](pics/login.png)
 - **Main Pge**: ![Main Page](pics/main.png)
 - **File Uploading**: ![Uploading Files](pics/uploading.png)
@@ -67,7 +67,7 @@ The project is currently configured for **local deployment**. However, the READM
 ### Примеры скриншотов
 
 Ниже приведены скриншоты, которые помогут вам понять основные функции приложения:
-- **Регистрация**: ![Регистрация](pics/reg.png)
+- **Регистрация**: ![Регистрация](pics/Reg.png)
 - **Авторизация**: ![Авторизация](pics/login.png) 
 - **Главная Страница**: ![Main Page](pics/main.png)
 - **Загрузка файлов**: ![Загрузка файлов](pics/uploading.png)
