@@ -1,6 +1,6 @@
 # MyCloud Project - Django & React + Vite
 
-
+## English Version
 
 Welcome to the **MyCloud** project repository! This is a graduation project built with **Django** for the backend and **React** with **Vite** for the frontend. It provides cloud-like storage functionality, allowing users to securely manage and store files.
 
@@ -27,10 +27,10 @@ The backend is developed using **Django**. You can find the setup instructions f
 
 ### Example Screenshots
 
-Below are some screenshots to guide you through the main functionalities of the app: 
+Below are some screenshots to guide you through the main functionalities of the app:
 - **Registration**: ![Registration](pics/reg.png)
 - **Login**: ![Login](pics/login.png)
-- **Main Pge**: ![Main Page](pics/main.png)
+- **Main Page**: ![Main Page](pics/main.png)
 - **File Uploading**: ![Uploading Files](pics/uploading.png)
 
 ### Current Setup
@@ -39,7 +39,7 @@ The project is currently configured for **local deployment**. However, the READM
 
 ---
 
-## Ru
+## Russian Version
 
 Добро пожаловать в репозиторий проекта **MyCloud**! Это дипломный проект, построенный с использованием **Django** для бэкенда и **React** с **Vite** для фронтенда. Проект предоставляет функционал облачного хранилища, позволяя пользователям безопасно управлять и хранить файлы.
 
@@ -68,10 +68,11 @@ The project is currently configured for **local deployment**. However, the READM
 
 Ниже приведены скриншоты, которые помогут вам понять основные функции приложения:
 - **Регистрация**: ![Registration](pics/reg.png)
-- **Авторизация**: ![Авторизация](pics/login.png) 
+- **Авторизация**: ![Авторизация](pics/login.png)
 - **Главная Страница**: ![Main Page](pics/main.png)
 - **Загрузка файлов**: ![Загрузка файлов](pics/uploading.png)
 
 ### Текущая настройка
 
 На данный момент проект настроен для **локального развертывания**. В README также есть подробное описание того, как настроить проект для размещения на **сервере**.
+
