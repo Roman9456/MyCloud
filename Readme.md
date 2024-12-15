@@ -1,7 +1,5 @@
 # MyCloud Project - Django & React + Vite
 
-
-
 Welcome to the **MyCloud** project repository! This is a graduation project built with **Django** for the backend and **React** with **Vite** for the frontend. It provides cloud-like storage functionality, allowing users to securely manage and store files.
 
 ### Project Structure
@@ -24,7 +22,8 @@ The backend is developed using **Django**. You can find the setup instructions f
 
 ### Example Screenshots
 
-Below are some screenshots to guide you through the main functionalities of the app: 
+Below are some screenshots to guide you through the main functionalities of the app:
+
 - **Registration**: ![Registration](pics/Reg.png)
 - **Login**: ![Login](pics/login.png)
 - **Main Pge**: ![Main Page](pics/main.png)
@@ -32,8 +31,7 @@ Below are some screenshots to guide you through the main functionalities of the 
 
 ### Current Setup
 
-The project is currently configured for **local deployment**. However, the README includes detailed instructions on how to configure the project for deployment on a **[server](backend/README_Server.md)**.
-
+The project is currently configured for **local deployment**. However, the README includes detailed instructions on how to configure the project for deployment on a **[server](backend/Readme_Server.md)**.
 
 ---
 
@@ -61,11 +59,13 @@ The project is currently configured for **local deployment**. However, the READM
 ### Примеры скриншотов
 
 Ниже приведены скриншоты, которые помогут вам понять основные функции приложения:
+
 - **Регистрация**: ![Регистрация](pics/Reg.png)
-- **Авторизация**: ![Авторизация](pics/login.png) 
+- **Авторизация**: ![Авторизация](pics/login.png)
 - **Главная Страница**: ![Main Page](pics/main.png)
 - **Загрузка файлов**: ![Загрузка файлов](pics/uploading.png)
 
 ### Текущая настройка
 
-Проект в настоящее время настроен для **локальной разработки**. Однако README включает подробные инструкции по настройке проекта для развертывания на **[сервере](backend/README_Server.md)**.
+Проект в настоящее время настроен для **локальной разработки**. Однако README включает подробные инструкции по настройке проекта для развертывания на **[сервере](backend/Readme_Server.md)**.
+
