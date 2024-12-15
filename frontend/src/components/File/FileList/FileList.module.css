@@ -1,0 +1,171 @@
+/* Main container for file list */
+.file-list {
+  background-color: #121212; /* Dark background */
+  color: #d3d3d3; /* Light text */
+  font-family: 'Courier New', Courier, monospace;
+  padding: 12px; /* Reduced padding */
+  border-radius: 8px; /* Smaller border radius */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7); /* Slightly smaller shadow */
+  overflow-y: auto;
+  width: 100%; /* Full width */
+  margin-top: 60px; /* Added margin to prevent overlap with fixed header */
+}
+
+/* Title of the section */
+.title {
+  font-size: 1.5em; /* Reduced font size */
+  color: #00FF00; /* Neon green */
+  margin-bottom: 10px; /* Reduced margin */
+  text-align: center;
+}
+
+/* Table styles */
+.table {
+  width: 100%; /* Full width */
+  border-collapse: collapse;
+  margin-top: 15px; /* Reduced margin */
+}
+
+.table th, .table td {
+  padding: 8px 10px; /* Reduced padding */
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+.table th {
+  color: #00FF00; /* Neon green */
+  font-weight: bold;
+  font-size: 1em; /* Smaller font size */
+}
+
+.table td {
+  color: #d3d3d3;
+  font-size: 0.9em; /* Slightly smaller font size */
+}
+
+/* Cell content style */
+.cell-content {
+  display: flex;
+  align-items: center;
+}
+
+.cell-content a {
+  color: #00FF00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cell-content a:hover {
+  color: #00cc00; /* Lighter green on hover */
+}
+
+/* Icon button style */
+.iconButton {
+  background: transparent;
+  border: none;
+  color: #00FF00;
+  font-size: 1.2em; /* Smaller icon size */
+  cursor: pointer;
+  margin-left: 8px; /* Reduced margin */
+  transition: color 0.3s ease;
+}
+
+.iconButton:hover {
+  color: #00cc00; /* Lighter green on hover */
+}
+
+/* Delete button style */
+.deleteButton {
+  background-color: #d32f2f;
+  color: #fff;
+  padding: 6px 12px; /* Smaller padding */
+  border-radius: 4px; /* Smaller border radius */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Info message when the link is copied */
+.info-message {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px; /* Reduced padding */
+  border-radius: 5px;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.info-message.show {
+  opacity: 1;
+}
+
+.info-message::after {
+  content: '✔';
+  margin-left: 8px;
+  color: #00FF00;
+}
+
+/* Modal styles */
+.modal {
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  width: 280px; /* Reduced width */
+  margin: 50px auto;
+  position: relative;
+}
+
+.modal h2 {
+  color: #00FF00;
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.modal p {
+  margin-bottom: 8px; /* Reduced margin */
+}
+
+.modal input {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 10px; /* Reduced padding */
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 4px; /* Smaller border radius */
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px; /* Reduced margin */
+}
+
+.modalActions button {
+  padding: 8px 16px; /* Reduced padding */
+  background-color: #00FF00;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modalActions button:hover {
+  background-color: #00cc00; /* Lighter green on hover */
+}
+
+/* Transition for modal appearance */
+.modalActions button.cancel {
+  background-color: #d32f2f;
+}
+
+.modalActions button.cancel:hover {
+  background-color: #b71c1c; /* Darker red on hover for cancel */
+}

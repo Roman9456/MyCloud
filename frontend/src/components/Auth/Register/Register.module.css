@@ -1,0 +1,127 @@
+/* Container for the register page */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #d3d3d3; /* Light text */
+  font-family: 'Courier New', Courier, monospace;
+  padding: 20px;
+}
+
+/* Greeting text */
+.greeting {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.greeting p {
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+.greeting p:first-child {
+  color: #00FF00; /* Neon green */
+}
+
+/* Register form styles */
+.register-form {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Input fields */
+.register-form input {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.register-form input:focus {
+  outline: none;
+  background-color: #555;
+  border-color: #00FF00; /* Neon green focus */
+}
+
+/* Submit button */
+.register-form button {
+  background-color: #00FF00;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #00cc00; /* Lighter green */
+  transform: scale(1.05); /* Button scale effect */
+}
+
+/* Error message */
+.error {
+  color: #d32f2f; /* Red for error */
+  font-size: 1em;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInError 0.5s forwards;
+}
+
+/* Fade-in animation for the form */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation for error message */
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .greeting p {
+    font-size: 1.2em;
+  }
+
+  .register-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  .register-form input {
+    padding: 10px 12px;
+  }
+
+  .register-form button {
+    font-size: 0.9em;
+    padding: 10px 15px;
+  }
+}

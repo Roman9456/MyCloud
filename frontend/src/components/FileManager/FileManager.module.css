@@ -1,0 +1,293 @@
+/* General Dashboard Styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #121212; /* Dark background */
+  color: #d3d3d3; /* Light text color */
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden; /* Prevent overflow for better UX */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px; /* Reduced padding */
+  background: linear-gradient(135deg, #1a1a1a, #000000);
+  border-bottom: 1px solid #444; /* Reduced border thickness */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5); /* Slightly smaller shadow */
+  position: fixed; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000;
+  animation: fadeInDown 0.5s ease; 
+}
+
+/* Neon Animated Line Below Header */
+.header-line {
+  width: 100%;
+  height: 2px;
+  margin-top: 10px; /* Small gap below the header */
+  background: linear-gradient(135deg, #00FF00, #00cc00, #00FF00);
+  animation: neonLineAnimation 1.5s ease-in-out infinite; /* Neon glow effect */
+}
+
+@keyframes neonLineAnimation {
+  0% {
+    background: linear-gradient(135deg, #00FF00, #00cc00, #00FF00);
+    box-shadow: 0 0 5px #00FF00, 0 0 15px #00FF00, 0 0 30px #00FF00;
+  }
+  50% {
+    background: linear-gradient(135deg, #00cc00, #00FF00, #00cc00);
+    box-shadow: 0 0 10px #00cc00, 0 0 25px #00cc00, 0 0 50px #00cc00;
+  }
+  100% {
+    background: linear-gradient(135deg, #00FF00, #00cc00, #00FF00);
+    box-shadow: 0 0 5px #00FF00, 0 0 15px #00FF00, 0 0 30px #00FF00;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Logo Styling */
+.logo {
+  height: 50px; /* Reduced logo size */
+  filter: drop-shadow(0 0 5px #00ff00); /* Neon green */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* Actions (Search and Buttons) */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Reduced gap */
+}
+
+.search {
+  padding: 8px 12px; /* Reduced padding */
+  border-radius: 4px; /* Smaller border radius */
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+  color: #d3d3d3;
+  font-family: 'Courier New', Courier, monospace;
+  transition: all 0.3s ease;
+}
+
+.search:focus {
+  background-color: #333;
+  border-color: #888;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon green */
+  outline: none;
+}
+
+.sort, .add {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  border: 2px solid #444;
+  padding: 8px 10px; /* Reduced padding */
+  color: #00ff00; /* Neon green */
+  border-radius: 4px; /* Smaller border radius */
+  font-size: 16px; /* Smaller font size */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort:hover, .add:hover {
+  background-color: #00ff00; /* Neon green */
+  color: #121212;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #00ff00; /* Neon green */
+}
+
+/* User Icon */
+.userIcon {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.userIcon:hover {
+  transform: scale(1.1);
+}
+
+.userIcon img {
+  height: 40px; /* Smaller size */
+  border-radius: 50%;
+  border: 2px solid #00ff00; /* Neon green */
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.userIcon img:hover {
+  transform: rotate(360deg);
+  filter: brightness(1.2);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 50px; /* Adjusted for smaller header */
+  right: 0;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown button {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #d3d3d3;
+  padding: 8px; /* Reduced padding */
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dropdown button:hover {
+  background-color: #333;
+  color: #00ff00; /* Neon green */
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1a1a1a;
+  padding: 15px; /* Reduced padding */
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Smaller shadow */
+  color: #d3d3d3;
+  width: 300px; /* Reduced width */
+  z-index: 1001;
+  animation: fadeInScale 0.3s ease;
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal input[type="file"], 
+.modal input[type="text"] {
+  width: 100%;
+  padding: 10px; /* Reduced padding */
+  margin-top: 10px; /* Reduced margin */
+  border-radius: 4px; /* Reduced border radius */
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal input:focus {
+  border-color: #00ff00; /* Neon green */
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Neon green */
+  outline: none;
+}
+
+.modal button {
+  width: 100%;
+  background-color: #444;
+  border: 2px solid #888;
+  padding: 8px; /* Reduced padding */
+  color: #fff;
+  margin-top: 12px; /* Reduced margin */
+  border-radius: 4px; /* Reduced border radius */
+  font-size: 14px; /* Smaller font size */
+  transition: all 0.3s ease;
+}
+
+.modal button:hover {
+  background-color: #00ff00; /* Neon green */
+  border-color: #00ff00; /* Neon green */
+  color: #121212;
+}
+
+.modal button:disabled {
+  background-color: #333;
+  border-color: #555;
+  cursor: not-allowed;
+}
+
+/* Sort Modal */
+.sortModal {
+  position: absolute;
+  background-color: #1a1a1a;
+  border-radius: 8px; /* Reduced border radius */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  padding: 12px; /* Reduced padding */
+  z-index: 1002;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sortModal h3 {
+  margin: 0;
+  color: #00ff00; /* Neon green */
+  font-size: 16px; /* Smaller font size */
+}
+
+.sortModal ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0; /* Reduced margin */
+}
+
+.sortModal li {
+  padding: 8px; /* Reduced padding */
+  color: #d3d3d3;
+  cursor: pointer;
+  border-radius: 4px; /* Reduced border radius */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sortModal li:hover {
+  background-color: #333;
+  color: #00ff00; /* Neon green */
+}
