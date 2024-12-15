@@ -6,7 +6,7 @@ Welcome to the **MyCloud** project repository! This is a graduation project buil
 
 - **`backend/`**: Contains the Django backend for handling user authentication, file management, and more.
 - **`frontend/`**: Contains the React app bundled with Vite, which is used for the user interface.
-- **`pics/`**: Contains example images for various functionalities:
+
 
 ### Frontend Setup
 
